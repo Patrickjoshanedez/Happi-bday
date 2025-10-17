@@ -1,0 +1,78 @@
+/* Google Fonts must come first */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Nunito:wght@300;400;600;700&display=swap');
+@import "tailwindcss";
+
+/* Design tokens */
+:root {
+  --blue-primary: #4A90E2;
+  --blue-light: #87CEEB;
+  --blue-powder: #B6E0FE;
+  --blue-dark: #2C3E50;
+  --blue-bg: #F8FBFF;
+  --accent-pink: #FFB6C1;
+}
+
+/* Tailwind v4 theme inline configuration */
+@theme inline {
+  /* Colors */
+  --color-birthday-blue-100: #F8FBFF;
+  --color-birthday-blue-200: #B6E0FE;
+  --color-birthday-blue-300: #87CEEB;
+  --color-birthday-blue-400: #4A90E2;
+  --color-birthday-blue-500: #2C3E50;
+  --color-birthday-pink: #FFB6C1;
+
+  /* Fonts */
+  --font-dancing: 'Dancing Script', cursive;
+  --font-nunito: 'Nunito', sans-serif;
+}
+
+/* Keyframes */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Smooth scrolling */
+html { scroll-behavior: smooth; }
+
+/* Prevent text selection during slideshow */
+.slideshow-container {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
